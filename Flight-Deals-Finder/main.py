@@ -6,11 +6,11 @@ from windows import MainMenu, DirectReportToplevel, MulticityReportToplevel
 from report_generator import generate_direct_report
 
 # FOR EMAIL NOTIFICATIONS
-os.environ["BOT_EMAIL"] = "hdevs@yahoo.com"
-os.environ["BOT_EMAIL_PASSWORD"] = "vdvxcujdtdwcpocw"
+os.environ["BOT_EMAIL"] = "YOUR_EMAIL"
+os.environ["BOT_EMAIL_PASSWORD"] = "YOUR_EMAIL_PASSWORD"
 
 # ENTER YOUR KIWI API KEY
-os.environ["KIWI_API_KEY"] = "FdA4jVwjX8esSNg0neYkGMuUYPFhZ4E-"
+os.environ["KIWI_API_KEY"] = "YOUR_KIWI_APIKEY"
 
 flight_search_handler = FlightSearch()
 notification_handler = NotificationManager(email=os.environ.get("BOT_EMAIL"), password=os.environ.get("BOT_EMAIL_PASSWORD"))
